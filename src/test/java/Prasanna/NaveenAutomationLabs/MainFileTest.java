@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import prasanna_kumar.TestComponents.BaseTest;
 
-public class MainFile extends BaseTest{
+public class MainFileTest extends BaseTest{
 
 	String[] RD = {"prasanna kumar", "tallam","prasannak@gmail.com","1234556789","1234"};
 	String[] ProductN = {"HP LP3065","HTC Touch HD","MacBook","Product 8"};
@@ -41,6 +41,9 @@ public class MainFile extends BaseTest{
 		WPage.step2(DProduct);
 		WPage.step3();
 		
+//	@Test(dependsOnMethods= {"test1"})
+//	public void test2() throws InterruptedException
+//	{
 		CartPage cart = new CartPage(driver);
 		cart.step1();
 		cart.step2();

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T09:59:55 IST" name="Default suite" finished-at="2023-10-20T10:00:29 IST" duration-ms="34109">
+  <suite started-at="2023-10-20T10:52:53 IST" name="Suite" finished-at="2023-10-20T10:53:31 IST" duration-ms="37511">
     <groups>
     </groups>
-    <test started-at="2023-10-20T09:59:55 IST" name="Default test" finished-at="2023-10-20T10:00:29 IST" duration-ms="34109">
-      <class name="Prasanna.NaveenAutomationLabs.MainFile">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T09:59:55 IST" name="startDriver" finished-at="2023-10-20T10:00:04 IST" duration-ms="9123" status="PASS">
+    <test started-at="2023-10-20T10:52:53 IST" name="Test" finished-at="2023-10-20T10:53:31 IST" duration-ms="37511">
+      <class name="Prasanna.NaveenAutomationLabs.MainFileTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFileTest@1500b2f3]" started-at="2023-10-20T10:52:53 IST" name="startDriver" finished-at="2023-10-20T10:53:03 IST" duration-ms="9621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="test1()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T10:00:04 IST" name="test1" finished-at="2023-10-20T10:00:29 IST" duration-ms="24915" status="PASS">
+        <test-method signature="test1()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFileTest@1500b2f3]" started-at="2023-10-20T10:53:03 IST" name="test1" finished-at="2023-10-20T10:53:31 IST" duration-ms="27841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-      </class> <!-- Prasanna.NaveenAutomationLabs.MainFile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Prasanna.NaveenAutomationLabs.MainFileTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
