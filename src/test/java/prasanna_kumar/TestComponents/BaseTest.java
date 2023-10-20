@@ -2,6 +2,8 @@ package prasanna_kumar.TestComponents;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -12,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
-	protected WebDriver driver;
+	public WebDriver driver;
 	
 	@BeforeMethod(alwaysRun=true)
 	public WebDriver startDriver() {
@@ -33,5 +35,30 @@ public class BaseTest {
 	
 	}
 	
+//	public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
+//
+//	{
+//
+//	Calendar calendar = Calendar.getInstance();
+//
+//	SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyy_hh_mm_ss");
+//
+//	//String png= System.currentTimeMillis()+ ".png";
+//
+//	TakesScreenshot ts=(TakesScreenshot) driver;
+//
+//	File source =ts.getScreenshotAs(OutputType.FILE);
+//
+//	String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+formater.format(calendar.getTime())+".png";
+//
+//	FileUtils.copyFile(source,new File(destinationFile));
+//
+//	return destinationFile;
+//
+//	}
+
+	
+
+
 	
 }

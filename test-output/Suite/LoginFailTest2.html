@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  LoginFailTest2</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>LoginFailTest2</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 20 18:17:13 IST 2023</td>
+<td>Started on:</td><td>Fri Oct 20 18:48:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26615 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11247 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Prasanna.NaveenAutomationLabs.MainFileTest.test1()'><b>test1</b><br>Test class: Prasanna.NaveenAutomationLabs.MainFileTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;w&quot; is null
-	at Prasanna.NaveenAutomationLabs.WishListPage.step2(WishListPage.java:71)
-	at Prasanna.NaveenAutomationLabs.MainFileTest.test1(MainFileTest.java:41)
+<td title='Prasanna.NaveenAutomationLabs.LoginFailTest.loginfail()'><b>loginfail</b><br>Test class: Prasanna.NaveenAutomationLabs.LoginFailTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address andor Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+	at Prasanna.NaveenAutomationLabs.LoginFailTest.loginfail(LoginFailTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530560245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1530560245'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;w&quot; is null
-	at Prasanna.NaveenAutomationLabs.WishListPage.step2(WishListPage.java:71)
-	at Prasanna.NaveenAutomationLabs.MainFileTest.test1(MainFileTest.java:41)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1209462308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1209462308'><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address andor Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Prasanna.NaveenAutomationLabs.LoginFailTest.loginfail(LoginFailTest.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -112,8 +116,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>20</td>
-<td>Prasanna.NaveenAutomationLabs.MainFileTest@1500b2f3</td></tr>
+<td>5</td>
+<td>Prasanna.NaveenAutomationLabs.LoginFailTest@50029372</td></tr>
 </table><p>
 </body>
 </html>

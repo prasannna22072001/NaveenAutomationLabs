@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Prasanna.NaveenAutomationLabs.MainFile">
+      <class name="Prasanna.NaveenAutomationLabs.LoginFailTest">
         <methods>
           <include name="startDriver"/>
-          <include name="test1"/>
+          <include name="loginfail"/>
         </methods>
-      </class> <!-- Prasanna.NaveenAutomationLabs.MainFile -->
+      </class> <!-- Prasanna.NaveenAutomationLabs.LoginFailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

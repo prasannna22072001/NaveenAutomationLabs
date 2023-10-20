@@ -31,6 +31,14 @@ public class LoginPage extends AbstractComponent{
 	@FindBy(xpath="//a[contains(.,'Show All Desktops')]")
 	WebElement click1;
 	
+	@FindBy(css=".alert.alert-danger.alert-dismissible")
+	WebElement text1;
+	
+	@FindBy(xpath="//a[@title='My Account']/span[1]")
+	WebElement myAccount;
+	
+	@FindBy(xpath="//li/a[contains(.,'Login')]")
+	WebElement login;
 	
 	public void step1(String[] rd) {
 		waitForElementToAppear(email);
@@ -47,5 +55,20 @@ public class LoginPage extends AbstractComponent{
 		click1.click();
 	}
 
+	
+	public String loginfailStep1(String[] rd) {
+		
+		waitForElementToAppear(myAccount);
+		myAccount.click();
+		login.click();
+		waitForElementToAppear(email);
+		email.sendKeys(rd[2]);
+		password.sendKeys(rd[4]);
+		login_button.click();
+		String wearning =text1.getText();
+		System.out.println(wearning);
+		
+		return wearning;
+	}
 
 }

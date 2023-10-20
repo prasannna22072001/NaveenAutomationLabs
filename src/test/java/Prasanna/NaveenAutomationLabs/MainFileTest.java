@@ -41,9 +41,7 @@ public class MainFileTest extends BaseTest{
 		WPage.step2(DProduct);
 		WPage.step3();
 		
-//	@Test(dependsOnMethods= {"test1"})
-//	public void test2() throws InterruptedException
-//	{
+
 		CartPage cart = new CartPage(driver);
 		cart.step1();
 		cart.step2();

@@ -73,9 +73,10 @@ public class WishListPage extends AbstractComponent{
 		
 	}
 	
-	public void step3() {
+	public void step3() throws InterruptedException {
 		
 		WebElement a =productName.stream().filter(q->q.getText().equalsIgnoreCase("HP LP3065")).findFirst().orElse(null);
+		Thread.sleep(2000);
 		a.findElement(By.xpath("parent::td/parent::tr/td[6]/button")).click();
 	
 		waitForElementToAppear(addcart);
