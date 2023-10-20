@@ -27,6 +27,9 @@ public class WishListPage extends AbstractComponent{
 	@FindBy(xpath="//tr/td[2]/a")
 	List <WebElement> productName;
 	
+	@FindBy(css="#button-cart")
+	WebElement addcart;
+	
 	public double step1() {
 		
 		List <String> LCost = PList.stream().map(q->q.getText().replace("$", "")).collect(Collectors.toList());
@@ -55,9 +58,9 @@ public class WishListPage extends AbstractComponent{
 	}	
 	
 	
-	public void step2() throws InterruptedException {
+	public void step2(String[] DProduct) throws InterruptedException {
 		
-		String[] DProduct = {"MacBook","HTC Touch HD"};
+		//String[] DProduct = {"MacBook","HTC Touch HD"};
 		
 		
 		for(int i=0;i<DProduct.length;i++) {
@@ -67,7 +70,19 @@ public class WishListPage extends AbstractComponent{
 			Thread.sleep(2000);
 			w.findElement(By.xpath("parent::td/parent::tr/td[6]/button")).click();
 		}
+		
+	}
+	
+	public void step3() {
+		
+		WebElement a =productName.stream().filter(q->q.getText().equalsIgnoreCase("HP LP3065")).findFirst().orElse(null);
+		a.findElement(By.xpath("parent::td/parent::tr/td[6]/button")).click();
+	
+		waitForElementToAppear(addcart);
+		addcart.click();
 	
 	}
+	
+	
 	
 }

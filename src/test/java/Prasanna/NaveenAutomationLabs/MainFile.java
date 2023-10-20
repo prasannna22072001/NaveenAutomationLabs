@@ -10,6 +10,7 @@ public class MainFile extends BaseTest{
 
 	String[] RD = {"prasanna kumar", "tallam","prasannak@gmail.com","1234556789","1234"};
 	String[] ProductN = {"HP LP3065","HTC Touch HD","MacBook","Product 8"};
+	String[] DProduct = {"MacBook","HTC Touch HD"};
 	double actualsum = 968.0;
 	
 	@Test
@@ -33,12 +34,16 @@ public class MainFile extends BaseTest{
 		ProPage.step2(ProductN);
 		
 		
-		WishListPage LPage = new WishListPage(super.driver);
-		double sum = LPage.step1();
+		WishListPage WPage = new WishListPage(super.driver);
+		double sum = WPage.step1();
 		Assert.assertEquals(sum, actualsum);
 		
-		LPage.step2();
-	
+		WPage.step2(DProduct);
+		WPage.step3();
+		
+		CartPage cart = new CartPage(driver);
+		cart.step1();
+		cart.step2();
 	}
 	
 	

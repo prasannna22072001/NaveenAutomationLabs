@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T08:40:20 IST" name="Default suite" finished-at="2023-10-20T08:40:47 IST" duration-ms="26839">
+  <suite started-at="2023-10-20T09:59:55 IST" name="Default suite" finished-at="2023-10-20T10:00:29 IST" duration-ms="34109">
     <groups>
     </groups>
-    <test started-at="2023-10-20T08:40:20 IST" name="Default test" finished-at="2023-10-20T08:40:47 IST" duration-ms="26839">
+    <test started-at="2023-10-20T09:59:55 IST" name="Default test" finished-at="2023-10-20T10:00:29 IST" duration-ms="34109">
       <class name="Prasanna.NaveenAutomationLabs.MainFile">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T08:40:20 IST" name="startDriver" finished-at="2023-10-20T08:40:29 IST" duration-ms="8674" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T09:59:55 IST" name="startDriver" finished-at="2023-10-20T10:00:04 IST" duration-ms="9123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="test1()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T08:40:29 IST" name="test1" finished-at="2023-10-20T08:40:47 IST" duration-ms="18109" status="PASS">
+        <test-method signature="test1()[pri:0, instance:Prasanna.NaveenAutomationLabs.MainFile@35d019a3]" started-at="2023-10-20T10:00:04 IST" name="test1" finished-at="2023-10-20T10:00:29 IST" duration-ms="24915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
