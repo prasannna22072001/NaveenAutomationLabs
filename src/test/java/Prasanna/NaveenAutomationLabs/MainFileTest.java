@@ -18,23 +18,23 @@ public class MainFileTest extends BaseTest{
 		
 		//i didn't call startDriver because - i wrote beforetest annotation above this startdriver method in BaseTest class. So there is no need to call this method because of this annotation
 		
-		RegisterPage regPage = new RegisterPage(super.driver);
+		RegisterPage regPage = new RegisterPage(driver);
 		regPage.stpe1();
 		regPage.step2(RD);
 		regPage.step3();
 	
 	
 	
-		LoginPage lPage = new LoginPage(super.driver);
+		LoginPage lPage = new LoginPage(driver);
 		lPage.step1(RD);
 		lPage.step2();
 	
-		ProductPage ProPage = new ProductPage(super.driver);
+		ProductPage ProPage = new ProductPage(driver);
 		ProPage.step1();
 		ProPage.step2(ProductN);
 		
 		
-		WishListPage WPage = new WishListPage(super.driver);
+		WishListPage WPage = new WishListPage(driver);
 		double sum = WPage.step1();
 		Assert.assertEquals(sum, actualsum);
 		

@@ -70,5 +70,18 @@ public class LoginPage extends AbstractComponent{
 		
 		return wearning;
 	}
+	
+public void searchbarstep1(String[] rd) {
+		
+		waitForElementToAppear(myAccount);
+		myAccount.click();
+		login.click();
+		waitForElementToAppear(email);
+		email.sendKeys(rd[2]);
+		password.sendKeys(rd[4]);
+		login_button.click();
+		
+	}
+	
 
 }
