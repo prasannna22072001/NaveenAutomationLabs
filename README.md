@@ -16,5 +16,5 @@ used faker repo from maven repository. This faker repo is a kind of repo where w
     </dependency>
 
 ######### we can copy this repo into our pom.xml file and this repo helps us to create fake data ##############3
-through this link " https://dius.github.io/java-faker/apidocs/index.html " we can get different types of data. This link heps us how to access data step by step
+through this link  https://dius.github.io/java-faker/apidocs/index.html . we can get different types of data. This link heps us how to access data step by step
 so we don't need to create seperate excel sheets or xml files for datas. This repo helps us a lot.    
