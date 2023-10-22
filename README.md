@@ -1,7 +1,7 @@
 # NaveenAutomationLabs
-#selenium automation with java
+#selenium automation with java.
 i am using page object model in this repo and testng framework.
-i used strems in java for looping. so these strems are very usful for for loop and if else loop. 
+i used strems in java for looping. so these strems are very useful than for loop and if else loop. 
 used testng reports for test cases.
 wrote a code to take screenshot (where ever the test failed it takes screenshot).
 used faker repo from maven repository. This faker repo is a kind of repo where we can access different types of data 
